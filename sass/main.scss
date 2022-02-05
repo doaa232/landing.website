@@ -1,0 +1,97 @@
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+
+
+@import '_menu';
+@import '_header';
+@import '_about';
+@import '_informations';
+@import '_developer';
+@import "_extra";
+@import "_product";
+@import "_questions";
+@import "footer";
+@import "_responsive";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+} 
+html{
+    --bg:#e4e4e4;
+
+    --primary-color:rgb(31, 31, 31);
+    --secondary-color:#ccc;
+    --answer-color: rgba(204, 204, 204, 0.596);
+    --card-color :#989393;
+
+    --text-header:rgb(31, 31, 31);
+    --text-pragraph:red;
+}
+
+html[data-theme='dark']{
+    --bg:#1d1d1d;
+
+    --primary-color:#e4e4e4;
+    --secondary-color: #565656;
+    --answer-color: rgb(86 70 70);
+    --card-color :#3c3736;
+    
+    --text-header:#e4e4e4;
+    --text-pragraph:red;
+}
+
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+    &:active {
+        transform: translateY(-2px);
+        font-weight: bold;
+    }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after{
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+}
+
+[v-cloak]{
+    display: none;
+}

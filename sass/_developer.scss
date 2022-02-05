@@ -1,0 +1,103 @@
+
+
+.developer {
+    height: 520vh;
+    overflow: hidden;
+
+    .weChose {
+        text-align: center;
+        color: var(--primary-color);
+
+        h2 {
+            font-size: 27px;
+            width: 312px;
+            margin: 20px auto;
+            opacity: .7;
+        }
+
+        .items {
+            margin: 60px auto;
+            display: grid;
+            width: 280px;
+
+            .item {
+                margin-top: 29px;
+                width: 300px;
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+
+                &:hover {
+                    box-shadow: 9px 10px 40px #524d4d;
+                    padding: 14px 7px 15px;
+                }
+
+                h3 {
+                    margin: 8px 0;
+                }
+
+                p {
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+
+    .built {
+        width: 63vw;
+        margin: 0 auto;
+        margin-top: 75px;
+        color: var(--primary-color);
+
+        h2 {
+            font-size: 32px;
+            width: 290px;
+        }
+
+        p {
+            line-height: 1.4;
+            margin: 16px 0 33px;
+            width: 290px;
+            color: var(--primary-color);
+        }
+
+        .items {
+            width: 290px;
+            display: grid;
+        
+    
+            .item {
+                margin-bottom: 30px;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+    
+                h4 {
+                    margin: 11px 0 4px;
+                    font-size: 19px;
+                }
+
+                &:hover {
+                    box-shadow: 9px 10px 40px #524d4d;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+        button {
+            margin: 14px 0;
+            color: #fff;
+            background: blue;
+            padding: 10px 29px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 15px;
+            width: 123px;
+        }
+        .img {
+            height: 73vh;
+            margin-top: 28px;
+        }
+    }
+
+
+}

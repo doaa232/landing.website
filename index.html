@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>app</title>
+</head>
+<body>
+    <div id="app">
+
+
+
+        <header>
+            <div class="navbar">
+                <h2><span>app</span>lab</h2>
+                <nav class="nav" :class="{open : showMenu}">
+                    <ul class="menu-nav" :class="{open : showMenu }">
+                        <li class="menu-nav_item" :class="{open : showMenu}"><a href="#" class="active">Home</a></li>
+                        <li class="menu-nav_item" :class="{open : showMenu}"><a href="#">Key features</a></li>
+                        <li class="menu-nav_item" :class="{open : showMenu}"><a href="#">pricing</a></li>
+                        <li class="menu-nav_item" :class="{open : showMenu}"><a href="#">Testiminal</a></li>
+                        <li class="menu-nav_item" :class="{open : showMenu}"><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <span class="free" :class="{open : showMenu}">Try for free</span>
+                <span class="dark" :class="{open : showMenu}" @click="themeSwitch">
+                    <img v-if="themeMode=='light'" src="./img/moon.svg"  alt="moon">
+                    <img v-cloak v-else src="./img/sun.svg" alt="sun" style="background-color: #ffb100; border-radius: 50%;">
+                </span>
+                <div class="menu-btn" @click="showMenu = !showMenu">
+                    <span class="menu-btn__burger" :class="{open : showMenu}"></span>
+                </div>
+            </div>
+
+            <div class="title">
+
+                <div :class="{open : showMenu}"><img src="./img/correct.svg" alt="">  #1Editiors Choice Of 2020</div>
+                <h1>Best app for your modern lifestyle</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, laborum aspernatur. Ea, repudiandae facilis accusantium</p>
+
+                <button>Try for free</button>
+                <button>Watch demo video</button>
+
+                <img class="mobile" src="./img/mobile.svg" alt=""></div>
+
+                <img class="img1" src="./img/city.png" alt="">
+        </header>
+
+
+
+
+
+        
+
+        <div class="about">
+            <div class="trust">
+                <h3>Trusted by companies like</h3>
+                <div class="img">
+                    <img src="./img/1.png" alt="">
+                    <img src="./img/2.png" alt="">
+                    <img src="./img/3.png" alt="">
+                    <img src="./img/4.png" alt="">
+                    <img src="./img/5.png" alt="">
+                           
+                </div>
+            </div>
+
+            <div class="features">
+                <h3>Awesome apps features</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+
+                <div class="items">
+                    <h4>Fast Performance</h4>
+                    <div class="item">
+                        <img class="img" src="./img/icon-3.png" alt="">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <h4 class="feature2">Fast Performance</h4>
+                    <div class="item">
+                        <img class="img" src="./img/icon-2.png" alt="">                        
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <h4 class="feature3">Fast Performance</h4>
+                    <div class="item">
+                        <img class="img" src="./img/icon-1.png"  alt="">                          
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+                    </div>
+                </div>
+
+                <img class="phone" src="./img/features-phone.png" alt="">               
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="informations">
+            <div class="jackpots">
+                <h2>Soart jackpots that you may love this anytime & anywhere</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <img src="./img/icon-4.png" alt="">
+                    <h4>Automatic Payouts</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+                </div>
+                <div class="benefit">
+                    <img src="./img/icon-5.png" alt="">
+                    <h4 class="benefit2">Network Effect</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+                </div>
+                <div class="benefit">
+                    <img src="./img/icon-6.png" alt="">
+                      
+                    <h4 class="benefit3">Bigger Rewarde Method</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  accusantium</p>
+                </div>
+            </div>
+
+            <div class="design">
+                <div class="designer">
+                    <h2>Designed & built by the latest cobe integration</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi quaerat voluptas dolores sequi. exercitationem incidunt eveniet. Accusantium ipsum labore eos,</p>
+                    <button>Learn more</button>
+                </div>
+                <img src="./img/icon-build.png" alt="" class="img">
+            </div>
+        </div>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+        <div class="developer">
+            <div class="weChose">
+                <h2>Why you should choose our app</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum labore eos,</p>
+                <div class="items">
+
+                    <div class="item">
+                        <img src="./img/icon-7.png" alt="">
+
+                          <h3>App Development</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/icon-8.png" alt="">
+                          <h3>10 Times Award</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/icon-9.png" alt="">
+                        <h3>Cloud Storage</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/icon-10.png" alt="">
+                          <h3>Customization</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/icon-11.png" alt="">
+                          <h3>UX Planning</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/icon-12.png" alt="">
+                        <h3>Customer Support</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="built">
+                <h2>Ultimate Features that we built</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum .</p>
+
+                <div class="features">
+                    <div class="items">
+                        <div class="item">
+                            <img src="./img/icon-7.png" alt="">
+                            <h4>App Development</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur , Ipsum possimus aperiam asperiores?</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/icon-11.png" alt="">
+                            <h4>UX Planing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur , Ipsum possimus aperiam asperiores?</p>
+                        </div>
+                        <div class="item">
+                            <img src="./img/icon-9.png" alt="">
+                              
+                            <h4>Cloud Storage</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur , Ipsum possimus aperiam asperiores?</p>
+                        </div>
+
+                        <div class="item">
+                            <img src="./img/icon-12.png" alt="">
+                              
+                            <h4>Customer support</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur , Ipsum possimus aperiam asperiores?</p>
+                        </div>
+
+                    </div>
+                    <button>See all</button>
+                    <img class="img" src="./img/icon-phone.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="extra">
+            <h2>Get awesome features, without extra charges</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quos beatae, inventore sed veniam neque quidem, facere mollitia nisi labore explicabo accusamus nobis possimus delectus tenetur. Labore dolor quod accusamus?</p>
+            <div @click="mutualMon = !mutualMon" class="participation">
+                <span  :class="{mutual : mutualMon}">Monthly</span>
+                <span :class="{mutual : !mutualMon}">annually</span>
+            </div>
+            <div class="cards">
+                <div v-cloak @click="cart1Front = !cart1Front" class="card card1" :class="{rotate: cart1Front}">
+                    <div class="front">
+                        <h3><span>$0</span>/month</h3>
+                        <h4>Business class</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, Ipsum possimus aperiam asperiores?</p>
+                    </div>
+                    <div class="back">
+                        <p>Drag & drop Builder</p>
+                        <p>1,000's of Templates</p>
+                        <p>Blog Support tools</p>
+                        <p>eCommerce Store</p>
+                        <button>start free trail</button>
+                    </div>
+                </div>
+                <div v-cloak @click="cart2Front = !cart2Front" class="card card2" :class="{rotate: cart2Front}">
+                    <div class="front">
+                        <h3><span>$99</span>/month</h3>
+                        <h4>Pro Master</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, Ipsum possimus aperiam asperiores</p>
+                    </div>
+                    <div class="back">
+                        <p>Drag & drop Builder</p>
+                        <p>1,000's of Templates</p>
+                        <p>Blog Support tools</p>
+                        <p>eCommerce Store</p>
+                        <button>start free trail</button>
+                        <h5>or Start 14 days trail</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="product">
+
+            <img class="world" src="./img/world.png" alt="">
+            
+            <div class="title">
+                <h3>Meet client satisfaction by using product</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, Ipsum possimus aperiam asperiores</p>
+                <div class="img">
+                    <img src="./img/icon-star.svg" alt="star">
+                    <img src="./img/icon-star.svg" alt="star">
+                    <img src="./img/icon-star.svg" alt="star">
+                    <img src="./img/icon-star.svg" alt="star">
+                    <img src="./img/icon-star.svg" alt="star">
+                </div>
+                <h4>User friendly & Customizable</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae sunt facere dolorem optio alias atque repellat laboriosam. Numquam dolore dolor ullam consectetur. Libero, in error! Maiores odio laudantium blanditiis?</p>
+
+                <div v-cloak class="users" v-if="ceo">
+                    <div class="user">
+                        <img src="./img/8.png" alt="">
+                        <div class="item">
+                            <h5>Zoltan Nemeth</h5>
+                            <p>CEO of Pixler lab</p>
+                        </div>
+                        
+                    </div>
+                    <div class="div">
+                        <span>-</span>
+                        <span v-cloak @click="ceo = false" class="special">-</span>
+                    </div>
+                </div>
+                <div v-cloak class="users" v-else>
+                    <div class="user">
+                        <img src="./img/6.png" alt="">
+                        <div class="item">
+                            <h5>Musab Mohammed</h5>
+                            <p>AED of Pixler lab</p>
+                        </div>
+                        
+                    </div>
+                    <div class="div">
+                        <span v-cloak @click="ceo = true" class="special">-</span>
+                        <span v-cloak>-</span>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+
+
+
+        <div class="questions">
+            <div class="title">
+                <h2>Frequently asked questions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur Numquam dolore dolor ullam consectetur. Libero, in error! Maiores odio laudantium</p>
+            </div>
+            <div class="question1">
+                <h4>How to contact with riders emergency?</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ipsam, iusto explicabo ea animi, impedit labore amet rerum autem molestiae ipsa at facere assumenda optio. Beatae nisi ipsum recusandae ipsam. </p>
+            </div>
+
+
+            <div>
+                <div class="question"  v-for="question in questions" :key="question.id">
+                    <div class="item">
+                        <div v-cloak>{{ question.question }}</div>
+                        <span v-cloak :class="{showAnswer : question.showAnswer}" @click="showTheAnswer(question.id)">+</span>
+                        <span v-cloak :class="{showAnswer : !question.showAnswer}" @click="showTheAnswer(question.id)">-</span>
+                    </div>
+                <div v-cloak :style="{'display': question.display}" class="answer">{{ question.answer }}</div>
+                </div>
+            </div>
+
+        </div>
+            <br><br>
+            <hr>
+
+        <div class="download">
+            <div class="title">
+                <h4>Download our App now!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error soluta nam mollitia vel placeat accusamus deserunt, inventore sequi doloribus quas! Repudiandae.</p>
+                <div class="img">
+                    <img class="icon" src="./img/icon-google.png" alt="">
+                    <img class="icon" src="./img/icon-apple.png" alt="">
+                </div>
+            </div>
+            <img class="city" src="./img/icon-city.png" alt="">
+        </div>
+
+
+
+
+        <footer>
+            <h2><span>App</span>lab</h2>
+            <ul>
+                <li> <a href="#" class="active">Home</a></li>
+                <li><a href="#">KeyFeatures</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testiminial</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="img">
+                <img src="./img/facebook.svg" alt="facebook">
+                <img src="./img/twitter.svg" alt="twitter">
+                <img src="./img/github.svg" alt="github">
+            </div>
+                
+            <span>copyright &copy Doaa Mohammed 2020. All rights reserved</span>
+        </footer>
+
+
+        <script src="js/vue.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+    
+</body>
+</html>

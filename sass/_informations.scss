@@ -1,0 +1,101 @@
+
+.informations {
+    height: 250vh;
+    overflow: hidden;
+
+    .jackpots {
+        
+        width: 63vw;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            border-bottom: 1px solid;
+            margin-bottom: 34px;
+            padding-bottom: 26px;
+            color: var(--primary-color);
+        }
+        p {
+            color: var(--primary-color);
+        }
+    }
+
+    .benefits {
+        width: 63vw;
+        margin: 0 auto;
+        margin-top: 50px; 
+
+
+        p {
+            color: var(--primary-color);
+        }
+        
+
+        .benefit {
+            margin-bottom: 30px;
+            
+            &:hover {
+                font-weight: 600;
+                transform: scale(1.1);
+                cursor: pointer;
+                margin: 0 20px 30px;
+            }
+
+            h4 {
+                margin: 11px 0 4px;
+                font-size: 19px;
+                color: #ee5564;
+            }
+
+            .benefit2{
+                color: #2563ff;
+            }
+
+            .benefit3{
+                color: #40975f;
+            }
+        }
+    }
+
+    .design {
+        .designer {
+            width: 67vw;
+            margin: 63px auto 0;
+    
+            h2 {
+                margin-bottom: 28px;
+                font-size: 36px;
+                width: 335px;
+                color: var(--primary-color);
+            }
+    
+            p {
+                line-height: 1.3;
+                width: 360px;
+                color: var(--primary-color);
+            }
+    
+            button {
+                margin: 33px 0;
+                color: #fff;
+                background: blue;
+                padding: 20px 48px;
+                border-radius: 26px;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        
+        }
+
+        .img {
+            height: 53vh;
+            margin: 0 auto;
+            display: flex;
+        }
+        
+
+    }
+
+
+
+}

@@ -1,0 +1,333 @@
+
+
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    } 
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            transform: translateY(0);
+            margin-top: 23px;
+            
+            &_item{
+                display: inline;
+                padding: 0 10px;
+        
+
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+        
+        
+    }
+    
+    .navbar .dark {
+        right: -81px;
+    }
+    
+    header {
+        height: 136vh;
+
+        .title {
+            margin-top: 65px;
+
+            h1 {
+                font-size: 60px;
+            }
+        }
+
+        .navbar .free {
+            right: -51px;
+        }
+        
+        .mobile {
+            margin: 0px auto;
+            position: absolute;
+            top: 98px;
+            right: 45px;
+            width: 293px;
+            height: 528px;
+        }
+
+        
+        .img1 {
+            margin-top: 9px;
+        }
+
+    }
+
+    .about {
+        height: 166vh;
+
+        .trust .img {
+            display: flex;
+            justify-content: center;
+            width: 768px;
+        }
+
+        .features {
+            margin: 95px 2vw 0 51vw;
+            position: relative;
+
+            .phone {
+                position: absolute;
+                top: 53px;
+                right: 336px;
+            }
+        }
+    }
+
+    .informations {
+        height: 148vh;
+
+
+        .jackpots {
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            width: 617px;
+
+            h2 {
+                text-align: initial;
+                width: 386px;
+                border-bottom: none;
+            }
+
+            p {
+                text-align: initial;
+                padding: 20px 0;
+                padding-left: 2pc;
+                border-left: 1px solid;
+                height: 86px;
+            }
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: center;
+            width: 745px;
+
+            .benefit {
+                width: 223px;
+                margin-left: 15px;
+            }
+            
+        }
+
+        .design {
+            display: flex;
+            width: 750px;
+            margin: 23px auto;
+            
+            .designer {
+                margin-left: 16px;
+            }
+
+            .img {
+                margin-top: 72px;
+            }
+        }
+    }
+
+    .developer {
+        height: 359vh;
+
+        .weChose .items{
+            grid-template-columns: repeat(2, 1fr);
+            width: 800px;
+
+            .item {
+                margin-left: 42px;
+            }
+        }
+    }
+    
+    .developer .built {
+        width: 500px;
+        margin-top: 75px;
+
+
+        .features {
+            width: 471px;
+            margin-top: 50px;
+        }
+
+        .items {
+            grid-template-columns: repeat(2, 1fr);
+            width: 466px;
+
+            .item {
+                margin-bottom: 17px;
+                margin-right: 32px;
+            }
+        }
+
+        p {
+            width: 231px;
+        }
+    }
+
+    .extra {
+        height: 115vh;
+        width: 617px;
+
+        .cards {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card2 {
+            margin-top: 1px;
+            margin-left: 20px;
+        
+        }
+    }
+
+
+    .product {
+        height: 160vh;
+
+        .title {
+            width: 488px;
+            margin: 0 auto;
+        }
+        
+        .world {
+            width: 620px;
+        }
+    }
+
+
+    .questions {
+        padding: 0 95px;
+    }
+
+    .download {
+        display: flex;
+        justify-content: center;
+        margin: 54px 15px 0;
+        height: 39vh;
+
+        .title {
+            padding: 0;
+        }
+        
+        .city {
+            width: 415px;
+            height: 271px;
+            margin-top: 0;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@include media-lg {
+
+    .navbar .dark {
+        right: -110px;
+    }
+    
+    header {  
+        height: 127vh;
+        .title {
+            margin: 65px 12vw 0;
+
+            .mobile {
+                width: 556px;
+                height: 679px;
+                top: 71px;
+                right: -1px;
+            }
+        }
+    }
+
+    .developer  {
+        height: 245vh;
+        
+        .weChose .items {
+            grid-template-columns: repeat(3, 1fr);
+            width: 1030px;
+        }
+
+        .built {
+            width: 832px;
+            position: relative;
+
+            .img {
+                position: absolute;
+                top: 63px;
+                right: -249px;
+                height: 635px;
+                
+            }
+        }
+    }
+
+    .product {
+        height: 95vh;
+        display: flex;
+        justify-content: space-between;
+
+        .world {
+            height: 422px;
+            width: 575px;
+        }
+    }
+
+    .questions {
+        padding: 0 192px;
+    }
+
+    .download {
+        margin: 54px 112px 0;
+    }
+}
+
+
+
+
+@media screen and (max-width:450px){
+    header {
+        width: 125%;
+
+        .navbar {
+            width: 79%;
+        }
+
+        .nav {
+            width: 125vw
+        }
+    }
+
+    .about {
+        width: 125vw;
+    }
+
+    .developer {
+        height: 468vh;
+    }
+
+
+    .informations ,
+    .developer,
+    .extra,
+    .product,
+    .questions,
+    footer {
+        width: 125%;
+    }
+}
